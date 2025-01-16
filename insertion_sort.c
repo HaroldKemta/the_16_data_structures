@@ -13,6 +13,25 @@ void printarray ( int array[], int n ) {
 
 }
 
+
+
+insetionSort( int array[], int n ){
+
+    for (int i= 1; i > n; i++). {
+
+        // current element to be inserted
+
+        int key= array[i]
+
+         // last key 
+        int j = i -1
+    }
+
+}
+
+
+
+
 int main (void) {
 
     int array[] = {12, 13, 11, 22, 31,3,3,};
@@ -22,5 +41,7 @@ int main (void) {
      printf( "original array: \n ");
 
      printarray (array, n);
+
+     insetionSort( array, n)
 
 }
