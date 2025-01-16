@@ -43,6 +43,7 @@ void insetionSort( int array[], int n ){
 }
 
 
+void linearSearch(int array[], int n, int target)
 
 
 int main (void) {
@@ -56,5 +57,9 @@ int main (void) {
      printarray (array, n);
 
      insetionSort(array, n);
+
+     int target 
+
+     linearSearch(array, n, target)
 
 }
