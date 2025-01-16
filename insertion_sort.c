@@ -15,16 +15,29 @@ void printarray ( int array[], int n ) {
 
 
 
-insetionSort( int array[], int n ){
+void insetionSort( int array[], int n ){
 
-    for (int i= 1; i > n; i++). {
+    for (int i= 1; i > n; i++) {
 
         // current element to be inserted
 
-        int key= array[i]
+        int key= array[i];
 
-         // last key 
-        int j = i -1
+         // if the number at position j is greater than the key ,move it up 
+
+         // think of j like the checker , the pointer 
+         
+        int j = i - 1;
+
+        if (j >= 0 && array[j] > key ) {
+
+            // assaight the left to the right -- move the current number up , change the index by -1 and put the key where they last number was
+
+            array[j+1] = array[j]; 
+            j = j-1;            
+        }
+
+        array[j+1]= key; 
     }
 
 }
@@ -42,6 +55,6 @@ int main (void) {
 
      printarray (array, n);
 
-     insetionSort( array, n)
+     insetionSort(array, n);
 
 }
