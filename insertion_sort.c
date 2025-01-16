@@ -58,8 +58,8 @@ int main (void) {
 
      insetionSort(array, n);
 
-     int target 
+     int target =12
 
-     linearSearch(array, n, target)
+     int foundIndex = linearSearch(array, n, target)
 
 }
