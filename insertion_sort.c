@@ -3,9 +3,9 @@
 
 void printarray ( int array[], int n ) {
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
 
-        printf("%d", array[i]);
+        printf("%d ", array[i]);
         
         }
 
@@ -43,7 +43,26 @@ void insetionSort( int array[], int n ){
 }
 
 
-void linearSearch(int array[], int n, int target)
+int linearSearch(int array[], int n, int target) {
+
+    printf( "linearSearch \n");
+
+    for ( int i = 0; i < n; i++) {
+
+        if (array[i] == target) {
+
+            return i;
+         }
+
+    }
+
+      return -1;
+
+}
+
+    binarySearch(array, n, target)
+
+
 
 
 int main (void) {
@@ -58,8 +77,14 @@ int main (void) {
 
      insetionSort(array, n);
 
-     int target =12
+     int target =12; 
 
-     int foundIndex = linearSearch(array, n, target)
+     int foundIndex = linearSearch(array, n, target);
+
+         printf( "target found at indix %d of the array", foundIndex);
+
+
+    binarySearch(array, n, target)
+
 
 }
