@@ -62,6 +62,8 @@ int linearSearch(int array[], int n, int target) {
 
     int binarySearch(int array[], int n, int target) {
 
+         printf( "Binary Search \n");
+
         int low , high , middle;
 
         low = 0 ;
