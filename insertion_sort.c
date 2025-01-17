@@ -112,14 +112,14 @@ int main (void) {
 
      int foundIndex = linearSearch(array, n, target);
 
-         printf( "target found at indix %d of the array \n" , foundIndex);
+         printf( "target found after %d Tries \n" , foundIndex);
 
     int index =3; 
 
 
    int biIndex= binarySearch(array, n, target);
 
-        printf( "target found at indix %d of the array", biIndex);
+        printf( "target found after %d Tries \n ", biIndex);
 
 
 }
