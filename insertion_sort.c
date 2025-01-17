@@ -60,7 +60,38 @@ int linearSearch(int array[], int n, int target) {
 
 }
 
-    binarySearch(array, n, target)
+    int binarySearch(int array[], int n, int target) {
+
+        int low , high , middle;
+
+        low = 0 ;
+
+        high = n-1;
+
+        middle = low + (high - low ) / 2;
+
+       while (low <= high) {
+    // Calculate middle index
+    int middle = low + (high - low) / 2;
+    
+    if (array[middle] == target) 
+        return middle; // Index found
+
+    if (array[middle] < target) {
+        low = middle + 1;  // Move to the right half
+    } else {
+        high = middle - 1; // Move to the left half
+    }
+}
+
+
+    
+
+    }
+
+
+
+
 
 
 
@@ -77,14 +108,18 @@ int main (void) {
 
      insetionSort(array, n);
 
-     int target =12; 
+     int target =3; 
 
      int foundIndex = linearSearch(array, n, target);
 
-         printf( "target found at indix %d of the array", foundIndex);
+         printf( "target found at indix %d of the array \n" , foundIndex);
+
+    int index =3; 
 
 
-    binarySearch(array, n, target)
+   int biIndex= binarySearch(array, n, target);
+
+        printf( "target found at indix %d of the array", biIndex);
 
 
 }
